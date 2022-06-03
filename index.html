@@ -2,36 +2,63 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script>
-  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-  src="https://maxcdn.bootstrapcdn.com/boostrap/3.4.1/js/bootstrap.min.js"></script>
-
 <style>
+
+/* Container holding the image and the text */
 .container {
   position: relative;
-  text-align: left;
+  text-align: center;
   color: white;
-  font-size: x-large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
 .centered {
   position: absolute;
-  top: 25%;
-  left: 15%;
-  transform: translate(100%, -100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+  
 </style>
 </head>
 <body>
-<div class="container">
-  <img src="https://cdn.phenompeople.com/CareerConnectResources/BAE1US/images/CareersSite_Hero_2882x100024-1636043929884.png" alt="Snow" style="width:100%;">
-  <div class="centered">Let <i>us</i>... Help <i>you</i><p>Here at <a style="color:palevioletred;">Representech</p></p></div>
-</div>
+  
+  <div class="container">
+    <img src="https://cdn.phenompeople.com/CareerConnectResources/BAE1US/images/CareersSite_Hero_2882x100024-1636043929884.png" alt="Hello" style="width:100%;">
+    <div class="bottom-left">Bottom Left</div>
+    <div class="top-left">Top Left</div>
+    <div class="top-right">Top Right</div>
+    <div class="bottom-right">Bottom Right</div>
+    <div class="centered">Centered</div>
+  </div>
 
 </body>
-</html>       
+</html> 
